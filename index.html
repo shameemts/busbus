@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>busbusd</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="icon" type="image/icon" href="./logo-removebg-preview.png">
+</head>
+<body>
+<div class="nav1">
+
+<div class="n1">
+
+<nav class="navbar navbar-expand-lg " id="n1-1">
+<img src="./logo_font-removebg-preview.png" class="logo mt-2 " width="300px" height="55px" alt="">
+
+<div class="container-fluid">
+<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-left">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+aria-expanded="false">
+English
+</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#">Action</a></li>
+<li><a class="dropdown-item" href="#">Another action</a></li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li><a class="dropdown-item" href="#">Something else here</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+aria-expanded="false">
+INR
+</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#">Action</a></li>
+<li><a class="dropdown-item" href="#">Another action</a></li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li><a class="dropdown-item" href="#">Something else here</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Help</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Sign in</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+</div>
+<div class="nav2">
+<div class="ORGIN">
+<label for="ORGIN">ORGIN</label>
+<input type="text" placeholder="Durban,Kwazulu Natal">
+</div>
+
+<i class="fa-solid fa-arrow-right-arrow-left me-2 p-2"></i>
+
+<div class="arrow">
+<!-- <img src="./exchange.png" alt=""> -->
+</div>
+<div class="DESTINATION">
+<label for="DESTINATION">DESTINATION</label>
+<input type="text" placeholder="Johannesburg, Gauteng, South Africa">
+</div>
+<div class="DATE">
+<label for="DATE">DATE</label>
+<input type="text" placeholder="Fri, Jul 19">
+</div>
+<div class="RETURN">
+<label for="RETURN">RETURN DATE</label>
+<input type="text" placeholder="Optional">
+</div>
+<div class="passanger">
+<label for="passanger">PASSANGER</label>
+<input type="text" placeholder="1 passanger">
+</div>
+<div class="SEARCH">
+    <i class="fa-solid fa-magnifying-glass fs-2"></i>
+<label for="SEARCH">Update</label>
+</div>
+</div>
+<div class="nav3 mb-0">
+<div class="col-1 mb-0">
+<h3>FRI</h3>
+<p>19</p>
+</div>
+<div class="col-2">
+<h3>20 SAT</h3>
+<p>1.5k</p>
+</div>
+<div class="col-2">
+<h3>24 SUN</h3>
+<p>1.5k</p>
+</div>
+<div class="col-2">
+<h3>21 MON</h3>
+<p>1.5k</p>
+</div>
+<div class="col-2">
+<h3>22 TUE</h3>
+<p>1.5k</p>
+</div>
+<div class="col-2">
+<h3>23 WEB</h3>
+<p>1.5k</p>
+</div>
+<div class="col-2">
+<h3>24 THU</h3>
+<p>1.5k</p>
+</div>
+</div>
+</div>
+<!-- select your trip -->
+<div class="row">
+<div class="col-6" id="col-left">
+<h3>SELECT YOUR TRIP</h3>
+<h2>4 results</h2>
+</div>
+<div class="col-6">
+
+<p>SORTED BY</p>
+<P>Recommended</P>
+<p>Cheapest</p>
+<p>Fastest</p>
+<p>Earliest</p>
+<p>Latest</p>
+</div>
+</div>
+<hr>
+<!-- row-1 -->
+<div class="row1">
+<!-- <div class="col-1"></div> -->
+<div class="col-4" id="col-left">
+<!-- Quick filters -->
+<h3>Quick filters</h3>
+<label for="" class="pb-2"><input type="checkbox"> <i class="fa-solid fa-qrcode" style="color:
+#63E6BE;"></i>
+E-ticket only (11)</label>
+<label for="" class="pb-2"><input type="checkbox"> <i class="fa-solid fa-bolt" style="color: #FFD43B;"></i>
+Direct
+only (11) </label>
+<label for="" class="pb-2"><input type="checkbox"> <i class="fa-solid fa-award" style="color:
+#a9a879;"></i></i>
+Award-winners only (0)</label>
+
+<hr>
+<!-- Departure time -->
+<h3>Departure time</h3>
+<label for="" class="pb-2"><input type="checkbox"> Nighttime (0)<span>Before 6am</span></label>
+<label for="" class="pb-2"><input type="checkbox"> <i class="fa-regular fa-sun" st
+yle="color: #FFD43B;"></i>
+Early
+(0) <span>6am - 11am</span></label>
+<label for="" class="pb-2"><input type="checkbox"> <i class="fa-solid fa-sun" style="color: #ff9500;"></i>
+Midday
+(0)<span>11am - 5pm</span></label>
+<label for="" class="pb-2"><input type="checkbox"> <i class="fa-solid fa-moon" style="color:
+#386c94;"></i></i>
+Late (11)<span>After 5pm</span></label>
+<hr>
+<!-- Operators -->
+<h3>Operators</h3>
+<label for="" class="pb-2"><input type="checkbox"> Eagle Liner (3)<span><i class="fa-solid fa-star"
+style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+class="fa-solid fa-star" style="color: #c2c2c2;"></i><i class="fa-solid fa-star"
+style="color: #c2c2c2;"></i><i class="fa-solid fa-star" style="color: #c2c2c2;"></i></span></label>
+<label for="" class="pb-2"><input type="checkbox"> Citiliner Plus (2) <span><i class="fa-solid fa-star"
+style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+style="color: #c2c2c2;"></i><i class="fa-solid fa-star" style="color: #c2c2c2;"></i></span></label>
+<label for="" class="pb-2"><input type="checkbox"> Intercity Xpress (2)<span><i class="fa-solid fa-star"
+style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+style="color: #c2c2c2;"></i><i class="fa-solid fa-star" style="color: #c2c2c2;"></i></span></label>
+<label for="" class="pb-2"><input type="checkbox"> Intercape Mainliner (2)
+<span><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+style="color: #c2c2c2;"></i></span></label>
+<label for="" class="pb-2"><input type="checkbox"> Greyhound (2) <span><i class="fa-solid fa-star"
+style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i
+class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star"
+style="color: #c2c2c2;"></i><i class="fa-solid fa-star" style="color: #c2c2c2;"></i></span></label>
+</div>
+<div class="col-7 p-5" id="col-right">
+<div class="col1">
+<section class="s1">
+<img
+
+src="https://busbud.imgix.net/operator-
+logos/Citiliner.jpeg?h=24&w=auto&auto=format&fit=fill&trim=auto&trim-md=0&dpr=1"
+
+alt="">
+<span>
+<label for=""><i class="fa-solid fa-bus"></i> Bus </label>
+<label for=""><i class="fa-solid fa-clock"></i> 8h 30m </label>
+
+</span>
+</section>
+<section class="s2">
+<div class="a1">
+<h3>10:00pm</h3>
+<p>Durban bus station,
+DURBAN</p>
+</div>
+<div class="a2"><i class="fa-solid fa-arrow-right"></i></div>
+<div class="a3">
+<h3>6:10am</h3>
+<p>Durban bus station, Cres</p>
+</div>
+</section>
+<section class="s3">
+<span><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-person"></i><i class="fa-solid fa-qrcode"
+style="color: #63E6BE;"></i></span>
+<button>2,583 ></button>
+</section>
+</div>
+<div class="col1">
+<section class="s1">
+<img
+
+src="https://busbud.imgix.net/operator-
+logos/Citiliner.jpeg?h=24&w=auto&auto=format&fit=fill&trim=auto&trim-md=0&dpr=1"
+
+alt="">
+<span>
+<label for=""><i class="fa-solid fa-bus"></i> Bus </label>
+<label for=""><i class="fa-solid fa-clock"></i> 8h 30m </label>
+</span>
+</section>
+<section class="s2">
+<div class="a1">
+<h3>10:00pm</h3>
+<p>Durban bus station,
+DURBAN</p>
+</div>
+<div class="a2"><i class="fa-solid fa-arrow-right"></i></div>
+<div class="a3">
+<h3>6:10am</h3>
+<p>Durban bus station, Cres</p>
+</div>
+</section>
+<section class="s3">
+<span><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-person"></i><i class="fa-solid fa-qrcode"
+style="color: #63E6BE;"></i></span>
+<button>2,583 ></button>
+</section>
+</div>
+
+<!-- <div class="col9">
+    <section class="s1">
+        <img class="s9" src="./download.jpeg" alt="">
+</section>
+</div> -->
+
+<div class="coln">
+    <section class="s1">
+<p class="font fs-3 ">Download the app and<span id="para">  earn up to 90% </span>in discounts for future trips. <br>
+    <img class="img1" src="./ios.avif" alt="" width="30px" height="50px"> 
+    <img class="img1"  src="./playstore.avif" alt="" width="30px" height="50px"></p>
+
+ </section>
+ 
+    
+ <!-- <section class="s2">
+    <div class="a1">
+    <img src="./ios.avif" alt="" width="30px" height="20px">
+    </div>
+    <div class="a2"><i class="fa-solid fa-arrow-right"></i></div>
+    <div class="a3">
+    <img src="./playstore.avif" alt="" width="30px" height="20px">
+    </div>
+    </section> -->
+ 
+        <!-- <section class="s2">
+        <div class="a1">
+        <h3>10:00pm</h3>
+        <p>Durban bus station,
+        DURBAN</p>
+        </div>
+        <div class="a2"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="a3">
+        <h3>6:10am</h3>
+        <p>Durban bus station, Cres</p>
+        </div>
+        </section> -->
+        
+        <section class="s">
+        <span><img src="./Screenshot_2024-07-23_103109-removebg-preview.png" alt="" width="200px" height="190px"></span>
+        </section>
+        </div>
+
+
+
+
+
+<div class="col1">
+<section class="s1">
+<img
+
+src="./img1.avif" width="80px" height="30px"
+
+alt="">
+
+<span>
+    <label for=""><i class="fa-solid fa-bus"></i> Bus </label>
+    <label for=""><i class="fa-solid fa-clock"></i> 8h 30m </label>
+    </span>
+    </section>
+    <section class="s2">
+    <div class="a1">
+    <h3>10:00pm</h3>
+    <p>Durban bus station,
+    DURBAN</p>
+    </div>
+    <div class="a2"><i class="fa-solid fa-arrow-right"></i></div>
+    <div class="a3">
+    <h3>6:10am</h3>
+    <p>Durban bus station, Cres</p>
+    </div>
+    </section>
+    
+    <section class="s3">
+    <span><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-person"></i><i class="fa-solid fa-qrcode"
+    style="color: #63E6BE;"></i></span>
+    <button>2,583 ></button>
+    </section>
+    </div>
+    <div class="col1">
+    <section class="s1">
+    <img
+    src="./img1.avif" width="80px" height="30px"
+
+    alt="">
+
+    <span>
+        <label for=""><i class="fa-solid fa-bus"></i> Bus </label>
+        <label for=""><i class="fa-solid fa-clock"></i> 8h 30m </label>
+        </span>
+        </section>
+        <section class="s2">
+        <div class="a1">
+        <h3>10:00pm</h3>
+        <p>Durban bus station,
+        DURBAN</p>
+        </div>
+        <div class="a2"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="a3">
+        <h3>6:10am</h3>
+        <p>Durban bus station, Cres</p>
+        </div>
+        </section>
+        
+        <section class="s3">
+        <span><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-person"></i><i class="fa-solid fa-qrcode"
+        style="color: #63E6BE;"></i></span>
+        <button>2,583 ></button>
+        </section>
+        </div>
+        <div class="col1">
+        <section class="s1">
+        <img
+        
+        src="./img1.avif" width="80px" height="30px"
+        
+        alt=""><span>
+            <label for=""><i class="fa-solid fa-bus"></i> Bus </label>
+            <label for=""><i class="fa-solid fa-clock"></i> 8h 30m </label>
+            </span>
+            </section>
+            <section class="s2">
+            <div class="a1">
+            <h3>10:00pm</h3>
+            <p>Durban bus station,
+            DURBAN</p>
+            </div>
+            <div class="a2"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="a3">
+            <h3>6:10am</h3>
+            <p>Durban bus station, Cres</p>
+            </div>
+            </section>
+            
+            <section class="s3">
+            <span><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-person"></i><i class="fa-solid fa-qrcode"
+            style="color: #63E6BE;"></i></span>
+            <button>2,583 ></button>
+            </section>
+            </div>
+            <div class="col1">
+            <section class="s1">
+            <img
+            src="https://busbud.imgix.net/operator-
+logos/Citiliner.jpeg?h=24&w=auto&auto=format&fit=fill&trim=auto&trim-md=0&dpr=1"
+            
+            alt=""><span>
+                <label for=""><i class="fa-solid fa-bus"></i> Bus </label>
+                <label for=""><i class="fa-solid fa-clock"></i> 8h 30m </label>
+                </span>
+                </section>
+                <section class="s2">
+                <div class="a1">
+                <h3>10:00pm</h3>
+                <p>Durban bus station,
+                DURBAN</p>
+                </div>
+                <div class="a2"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="a3">
+                <h3>6:10am</h3>
+                <p>Durban bus station, Cres</p>
+                </div>
+                </section>
+                
+                <section class="s3">
+                <span><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-person"></i><i class="fa-solid fa-qrcode"
+                style="color: #63E6BE;"></i></span>
+                <button>2,583 ></button>
+                </section>
+                </div>
+                <div class="col1">
+                <section class="s1">
+                <img
+                
+                src="./img1.avif" width="80px" height="30px"
+                alt="">
+<span>
+<label for=""><i class="fa-solid fa-bus"></i> Bus </label>
+<label for=""><i class="fa-solid fa-clock"></i> 8h 30m </label>
+</span>
+</section>
+<section class="s2">
+<div class="a1">
+<h3>10:00pm</h3>
+<p>Durban bus station,
+DURBAN</p>
+</div>
+<div class="a2"><i class="fa-solid fa-arrow-right"></i></div>
+<div class="a3">
+<h3>6:10am</h3>
+<p>Durban bus station, Cres</p>
+</div>
+</section>
+
+<section class="s3">
+<span><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-person"></i><i class="fa-solid fa-qrcode"
+style="color: #63E6BE;"></i></span>
+<button>2,583 ></button>
+</section>
+</div>
+<div class="col1">
+<section class="s1">
+<img
+
+src="https://busbud.imgix.net/operator-
+logos/Citiliner.jpeg?h=24&w=auto&auto=format&fit=fill&trim=auto&trim-md=0&dpr=1"
+
+alt="">
+<span>
+<label for=""><i class="fa-solid fa-bus"></i> Bus </label>
+<label for=""><i class="fa-solid fa-clock"></i> 8h 30m </label>
+</span>
+</section>
+<section class="s2">
+<div class="a1">
+<h3>10:00pm</h3>
+<p>Durban bus station,
+DURBAN</p>
+</div>
+<div class="a2"><i class="fa-solid fa-arrow-right"></i></div>
+<div class="a3">
+<h3>6:10am</h3>
+<p>Durban bus station, Cres</p>
+</div>
+
+
+
+    
+</section>
+<section class="s3">
+<span><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-person"></i><i class="fa-solid fa-qrcode"
+style="color: #63E6BE;"></i></span>
+<button>2,583 ></button>
+</section>
+</div>
+</div>
+<div class="col-1"></div>
+</div>
+<hr>
+<!-- footer -->
+<footer>
+<section class="f1">
+<h3>© 2024 Busbud Inc., All rights reserved</h3>
+</section>
+<section class="f2">
+<a href="#">Terms of use</a>
+<a href="#">Privacy</a>
+<a href="#">Refund policy</a>
+</section>
+<section class="f3">
+<a href="#">Help</a>
+</section>
+</footer>
+</body>
+</html> 
+
